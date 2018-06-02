@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class Form1 : Form
+    public partial class TiepNhanHocSinh : Form
     {
-        public Form1()
+        public TiepNhanHocSinh()
         {
             InitializeComponent();
+        }
+
+        private void TiepNhanHocSinh_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
