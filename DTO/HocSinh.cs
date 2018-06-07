@@ -1,16 +1,16 @@
 ﻿using System;
 
-namespace DTO
+namespace QuanLyHocSinh
 {
     public class HocSinh
     {
-        private int MaHS { get; set; }
-        private string HoTen { get; set; }
-        private string GioiTinh { get; set; }
-        private string NgaySinh { get; set; }
-        private string DiaChi { get; set; }
-        private string SoDT { get; set; }
-        private string MaLop { get; set; }
+        public int MaHS { get; set; }
+        public string HoTen { get; set; }
+        public string GioiTinh { get; set; }
+        public string NgaySinh { get; set; }
+        public string DiaChi { get; set; }
+        public string SoDT { get; set; }
+        public string MaLop { get; set; }
 
         public HocSinh( int maHS = 0, 
                         string hoTen = "", 

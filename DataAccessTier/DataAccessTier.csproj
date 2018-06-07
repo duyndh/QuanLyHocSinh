@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9E59C43C-15F9-4B5C-9834-29E52A9F5236}</ProjectGuid>
+    <ProjectGuid>{142C5AEF-1BEF-4CC2-B76D-E6DCF66EFE1A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DTO</RootNamespace>
-    <AssemblyName>DTO</AssemblyName>
+    <RootNamespace>DataAccessTier</RootNamespace>
+    <AssemblyName>DataAccessTier</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,15 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChiTietDiem.cs" />
-    <Compile Include="HocKy.cs" />
-    <Compile Include="HocPhan.cs" />
-    <Compile Include="HocSinh.cs" />
-    <Compile Include="Khoi.cs" />
-    <Compile Include="LoaiKiemTra.cs" />
-    <Compile Include="Lop.cs" />
-    <Compile Include="MonHoc.cs" />
+    <Compile Include="ChiTietDiemDAO.cs" />
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="HocKyDAO.cs" />
+    <Compile Include="HocPhanDAO.cs" />
+    <Compile Include="HocSinhDAO.cs" />
+    <Compile Include="KhoiDAO.cs" />
+    <Compile Include="LoaiKiemTraDAO.cs" />
+    <Compile Include="LopDAO.cs" />
+    <Compile Include="MonHocDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{9e59c43c-15f9-4b5c-9834-29e52a9f5236}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
