@@ -4,7 +4,7 @@ namespace QuanLyHocSinh
 {
     public class HocSinh
     {
-        public int MaHS { get; set; }
+        public string MaHS { get; set; }
         public string HoTen { get; set; }
         public string GioiTinh { get; set; }
         public string NgaySinh { get; set; }
@@ -12,7 +12,7 @@ namespace QuanLyHocSinh
         public string SoDT { get; set; }
         public string MaLop { get; set; }
 
-        public HocSinh( int maHS = 0, 
+        public HocSinh( string maHS = "", 
                         string hoTen = "", 
                         string gioiTinh = "", 
                         string ngaySinh = "", 

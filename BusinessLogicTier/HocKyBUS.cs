@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLogicTier
+namespace QuanLyHocSinh
 {
     class HocKyBUS
     {

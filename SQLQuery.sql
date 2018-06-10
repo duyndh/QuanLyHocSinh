@@ -108,28 +108,47 @@ INSERT INTO HOCSINH (MaHS, Hoten, GioiTinh, NgaySinh, DiaChi, SoDT) VALUES
 --('HK120172018', N'Học kỳ 1 Năm học 2017-2018'),
 --('HK220172018', N'Học kỳ 2 Năm học 2017-2018')
 
-
-CREATE PROCEDURE ThemHS
+CREATE PROCEDURE ThemHocSinh
 	--@MaHS		int,	
 	@HoTen		nvarchar(50),
 	@GioiTinh	nvarchar(3),
 	@NgaySinh	smalldatetime,
 	@DiaChi		nvarchar(100),
-	@SoDT		varchar(25)
-	--@MaLop		int
+	@SoDT		varchar(25),
+	@MaLop		int
 AS
 BEGIN
-	INSERT INTO HOCSINH (HoTen, GioiTinh, NgaySinh, DiaChi, SoDT)
-	VALUES(@HoTen, @GioiTinh, @NgaySinh, @DiaChi, @SoDT);
+	INSERT INTO HOCSINH (HoTen, GioiTinh, NgaySinh, DiaChi, SoDT, MaLop)
+	VALUES(@HoTen, @GioiTinh, @NgaySinh, @DiaChi, @SoDT, @MaLop);
 END
 GO
 
 CREATE PROCEDURE LayMaHocSinhMoi
+	@ID int OUTPUT
 AS
 BEGIN
-	DECLARE @ID int
-	SET @ID = (SELECT MAX(MaHS) FROM HOCSINH)
-	RETURN @ID
+	SELECT @ID = MAX(MaHS) FROM HOCSINH
+GO
+
+CREATE PROCEDURE LayDuLieuKhoi
+AS
+BEGIN
+	SELECT * FROM KHOI
 END
 GO
- 
+
+CREATE PROCEDURE LayDuLieuLopTuKhoi
+	@MaKhoi int
+AS
+BEGIN
+	SELECT * FROM LOP WHERE MaKhoi = @MaKhoi
+END
+GO
+
+CREATE PROCEDURE KiemTraLopHopLe
+	@MaLop int
+AS
+BEGIN
+	SELECT * FROM LOP WHERE MaLop = @MaLop;
+END
+GO

@@ -1,4 +1,6 @@
-﻿namespace QuanLyHocSinh
+﻿using System.Windows.Forms;
+
+namespace QuanLyHocSinh
 {
     partial class TiepNhanHocSinh
     {
@@ -28,449 +30,345 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.heThongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quanLyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tiepNhanHocSinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lapDanhSachLopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lopHocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.diemSoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thayDoiQuyDinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.traCuuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.baoCaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.troGiupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thongTinHocSinhPanel = new System.Windows.Forms.Panel();
             this.maHocSinhLabel = new System.Windows.Forms.Label();
             this.maHocSinhTextBox = new System.Windows.Forms.TextBox();
-            this.hoTenTextBox = new System.Windows.Forms.TextBox();
             this.hoTenLabel = new System.Windows.Forms.Label();
+            this.hoTenTextBox = new System.Windows.Forms.TextBox();
             this.gioiTinhLabel = new System.Windows.Forms.Label();
             this.gioiTinhComboBox = new System.Windows.Forms.ComboBox();
             this.ngaySinhLabel = new System.Windows.Forms.Label();
             this.ngaySinhDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.diaChiTextBox = new System.Windows.Forms.TextBox();
             this.diaChiLabel = new System.Windows.Forms.Label();
-            this.soDienThoaiTextBox = new System.Windows.Forms.TextBox();
+            this.diaChiTextBox = new System.Windows.Forms.TextBox();
             this.soDienThoaiLabel = new System.Windows.Forms.Label();
-            this.thongTinHocSinhPanel = new System.Windows.Forms.Panel();
-            this.thongTinHocSinhLabel = new System.Windows.Forms.Label();
-            this.thongTinTiepNhanLabel = new System.Windows.Forms.Label();
-            this.thongTinTiepNhanPanel = new System.Windows.Forms.Panel();
+            this.soDienThoaiTextBox = new System.Windows.Forms.TextBox();
+            this.thongTinLopHocPanel = new System.Windows.Forms.Panel();
             this.lopComboBox = new System.Windows.Forms.ComboBox();
-            this.hocKyComboBox = new System.Windows.Forms.ComboBox();
             this.khoiComboBox = new System.Windows.Forms.ComboBox();
             this.lopLabel = new System.Windows.Forms.Label();
-            this.hockyLabel = new System.Windows.Forms.Label();
             this.khoiLabel = new System.Windows.Forms.Label();
-            this.luuButton = new System.Windows.Forms.Button();
+            this.thongTinHocSinhLabel = new System.Windows.Forms.Label();
+            this.thongTinLopHocLabel = new System.Windows.Forms.Label();
             this.nhapLaiButton = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.luuButton = new System.Windows.Forms.Button();
+            this.formLabel = new System.Windows.Forms.Label();
             this.thongTinHocSinhPanel.SuspendLayout();
-            this.thongTinTiepNhanPanel.SuspendLayout();
+            this.thongTinLopHocPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // thongTinHocSinhPanel
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.heThongToolStripMenuItem,
-            this.quanLyToolStripMenuItem,
-            this.traCuuToolStripMenuItem,
-            this.baoCaoToolStripMenuItem,
-            this.troGiupToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(850, 28);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // heThongToolStripMenuItem
-            // 
-            this.heThongToolStripMenuItem.Name = "heThongToolStripMenuItem";
-            this.heThongToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.heThongToolStripMenuItem.Text = "Hệ thống";
-            // 
-            // quanLyToolStripMenuItem
-            // 
-            this.quanLyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tiepNhanHocSinhToolStripMenuItem,
-            this.lapDanhSachLopToolStripMenuItem,
-            this.lopHocToolStripMenuItem,
-            this.diemSoToolStripMenuItem,
-            this.thayDoiQuyDinhToolStripMenuItem});
-            this.quanLyToolStripMenuItem.Name = "quanLyToolStripMenuItem";
-            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
-            this.quanLyToolStripMenuItem.Text = "Quản lý";
-            // 
-            // tiepNhanHocSinhToolStripMenuItem
-            // 
-            this.tiepNhanHocSinhToolStripMenuItem.Name = "tiepNhanHocSinhToolStripMenuItem";
-            this.tiepNhanHocSinhToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
-            this.tiepNhanHocSinhToolStripMenuItem.Text = "Tiếp nhận học sinh";
-            // 
-            // lapDanhSachLopToolStripMenuItem
-            // 
-            this.lapDanhSachLopToolStripMenuItem.Name = "lapDanhSachLopToolStripMenuItem";
-            this.lapDanhSachLopToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
-            this.lapDanhSachLopToolStripMenuItem.Text = "Lập danh sách lớp";
-            // 
-            // lopHocToolStripMenuItem
-            // 
-            this.lopHocToolStripMenuItem.Name = "lopHocToolStripMenuItem";
-            this.lopHocToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
-            this.lopHocToolStripMenuItem.Text = "Lớp học";
-            // 
-            // diemSoToolStripMenuItem
-            // 
-            this.diemSoToolStripMenuItem.Name = "diemSoToolStripMenuItem";
-            this.diemSoToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
-            this.diemSoToolStripMenuItem.Text = "Điểm số";
-            // 
-            // thayDoiQuyDinhToolStripMenuItem
-            // 
-            this.thayDoiQuyDinhToolStripMenuItem.Name = "thayDoiQuyDinhToolStripMenuItem";
-            this.thayDoiQuyDinhToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
-            this.thayDoiQuyDinhToolStripMenuItem.Text = "Thay đổi quy định";
-            // 
-            // traCuuToolStripMenuItem
-            // 
-            this.traCuuToolStripMenuItem.Name = "traCuuToolStripMenuItem";
-            this.traCuuToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
-            this.traCuuToolStripMenuItem.Text = "Tra cứu";
-            // 
-            // baoCaoToolStripMenuItem
-            // 
-            this.baoCaoToolStripMenuItem.Name = "baoCaoToolStripMenuItem";
-            this.baoCaoToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
-            this.baoCaoToolStripMenuItem.Text = "Báo cáo";
-            // 
-            // troGiupToolStripMenuItem
-            // 
-            this.troGiupToolStripMenuItem.Name = "troGiupToolStripMenuItem";
-            this.troGiupToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
-            this.troGiupToolStripMenuItem.Text = "Trợ giúp";
+            this.thongTinHocSinhPanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.thongTinHocSinhPanel.Controls.Add(this.maHocSinhLabel);
+            this.thongTinHocSinhPanel.Controls.Add(this.maHocSinhTextBox);
+            this.thongTinHocSinhPanel.Controls.Add(this.hoTenLabel);
+            this.thongTinHocSinhPanel.Controls.Add(this.hoTenTextBox);
+            this.thongTinHocSinhPanel.Controls.Add(this.gioiTinhLabel);
+            this.thongTinHocSinhPanel.Controls.Add(this.gioiTinhComboBox);
+            this.thongTinHocSinhPanel.Controls.Add(this.ngaySinhLabel);
+            this.thongTinHocSinhPanel.Controls.Add(this.ngaySinhDateTimePicker);
+            this.thongTinHocSinhPanel.Controls.Add(this.diaChiLabel);
+            this.thongTinHocSinhPanel.Controls.Add(this.diaChiTextBox);
+            this.thongTinHocSinhPanel.Controls.Add(this.soDienThoaiLabel);
+            this.thongTinHocSinhPanel.Controls.Add(this.soDienThoaiTextBox);
+            this.thongTinHocSinhPanel.Location = new System.Drawing.Point(15, 105);
+            this.thongTinHocSinhPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.thongTinHocSinhPanel.Name = "thongTinHocSinhPanel";
+            this.thongTinHocSinhPanel.Size = new System.Drawing.Size(1234, 318);
+            this.thongTinHocSinhPanel.TabIndex = 1;
             // 
             // maHocSinhLabel
             // 
             this.maHocSinhLabel.AutoSize = true;
-            this.maHocSinhLabel.Location = new System.Drawing.Point(12, 15);
+            this.maHocSinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maHocSinhLabel.Location = new System.Drawing.Point(52, 22);
+            this.maHocSinhLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maHocSinhLabel.Name = "maHocSinhLabel";
-            this.maHocSinhLabel.Size = new System.Drawing.Size(84, 17);
-            this.maHocSinhLabel.TabIndex = 2;
+            this.maHocSinhLabel.Size = new System.Drawing.Size(100, 20);
+            this.maHocSinhLabel.TabIndex = 1;
             this.maHocSinhLabel.Text = "Mã học sinh";
             // 
             // maHocSinhTextBox
             // 
-            this.maHocSinhTextBox.Location = new System.Drawing.Point(15, 35);
+            this.maHocSinhTextBox.Enabled = false;
+            this.maHocSinhTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maHocSinhTextBox.Location = new System.Drawing.Point(58, 46);
+            this.maHocSinhTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.maHocSinhTextBox.Name = "maHocSinhTextBox";
-            this.maHocSinhTextBox.Size = new System.Drawing.Size(100, 22);
-            this.maHocSinhTextBox.TabIndex = 3;
-            // 
-            // hoTenTextBox
-            // 
-            this.hoTenTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.hoTenTextBox.Location = new System.Drawing.Point(15, 90);
-            this.hoTenTextBox.Name = "hoTenTextBox";
-            this.hoTenTextBox.Size = new System.Drawing.Size(266, 22);
-            this.hoTenTextBox.TabIndex = 5;
+            this.maHocSinhTextBox.Size = new System.Drawing.Size(124, 27);
+            this.maHocSinhTextBox.TabIndex = 0;
             // 
             // hoTenLabel
             // 
             this.hoTenLabel.AutoSize = true;
-            this.hoTenLabel.Location = new System.Drawing.Point(12, 70);
+            this.hoTenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoTenLabel.Location = new System.Drawing.Point(54, 92);
+            this.hoTenLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hoTenLabel.Name = "hoTenLabel";
-            this.hoTenLabel.Size = new System.Drawing.Size(107, 17);
-            this.hoTenLabel.TabIndex = 4;
-            this.hoTenLabel.Text = "Họ tên học sinh";
+            this.hoTenLabel.Size = new System.Drawing.Size(59, 20);
+            this.hoTenLabel.TabIndex = 3;
+            this.hoTenLabel.Text = "Họ tên";
+            // 
+            // hoTenTextBox
+            // 
+            this.hoTenTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoTenTextBox.Location = new System.Drawing.Point(58, 116);
+            this.hoTenTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.hoTenTextBox.Name = "hoTenTextBox";
+            this.hoTenTextBox.Size = new System.Drawing.Size(533, 27);
+            this.hoTenTextBox.TabIndex = 1;
             // 
             // gioiTinhLabel
             // 
             this.gioiTinhLabel.AutoSize = true;
-            this.gioiTinhLabel.Location = new System.Drawing.Point(362, 70);
+            this.gioiTinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gioiTinhLabel.Location = new System.Drawing.Point(753, 92);
+            this.gioiTinhLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gioiTinhLabel.Name = "gioiTinhLabel";
-            this.gioiTinhLabel.Size = new System.Drawing.Size(60, 17);
-            this.gioiTinhLabel.TabIndex = 6;
+            this.gioiTinhLabel.Size = new System.Drawing.Size(71, 20);
+            this.gioiTinhLabel.TabIndex = 5;
             this.gioiTinhLabel.Text = "Giới tính";
             // 
             // gioiTinhComboBox
             // 
-            this.gioiTinhComboBox.AutoCompleteCustomSource.AddRange(new string[] {
-            "Nam",
-            "Nữ"});
+            this.gioiTinhComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gioiTinhComboBox.FormattingEnabled = true;
             this.gioiTinhComboBox.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.gioiTinhComboBox.Location = new System.Drawing.Point(365, 90);
+            this.gioiTinhComboBox.Location = new System.Drawing.Point(757, 115);
+            this.gioiTinhComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.gioiTinhComboBox.Name = "gioiTinhComboBox";
-            this.gioiTinhComboBox.Size = new System.Drawing.Size(121, 24);
-            this.gioiTinhComboBox.TabIndex = 7;
+            this.gioiTinhComboBox.Size = new System.Drawing.Size(150, 28);
+            this.gioiTinhComboBox.TabIndex = 2;
             // 
             // ngaySinhLabel
             // 
             this.ngaySinhLabel.AutoSize = true;
-            this.ngaySinhLabel.Location = new System.Drawing.Point(553, 70);
+            this.ngaySinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ngaySinhLabel.Location = new System.Drawing.Point(1009, 92);
+            this.ngaySinhLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ngaySinhLabel.Name = "ngaySinhLabel";
-            this.ngaySinhLabel.Size = new System.Drawing.Size(73, 17);
-            this.ngaySinhLabel.TabIndex = 8;
-            this.ngaySinhLabel.Text = "Ngày Sinh";
+            this.ngaySinhLabel.Size = new System.Drawing.Size(83, 20);
+            this.ngaySinhLabel.TabIndex = 7;
+            this.ngaySinhLabel.Text = "Ngày sinh";
             // 
             // ngaySinhDateTimePicker
             // 
             this.ngaySinhDateTimePicker.CustomFormat = "dd/MM/yyyy";
+            this.ngaySinhDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ngaySinhDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ngaySinhDateTimePicker.Location = new System.Drawing.Point(556, 90);
+            this.ngaySinhDateTimePicker.Location = new System.Drawing.Point(1013, 116);
+            this.ngaySinhDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.ngaySinhDateTimePicker.Name = "ngaySinhDateTimePicker";
-            this.ngaySinhDateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.ngaySinhDateTimePicker.TabIndex = 9;
-            this.ngaySinhDateTimePicker.Value = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
-            // 
-            // diaChiTextBox
-            // 
-            this.diaChiTextBox.Location = new System.Drawing.Point(15, 149);
-            this.diaChiTextBox.Name = "diaChiTextBox";
-            this.diaChiTextBox.Size = new System.Drawing.Size(457, 22);
-            this.diaChiTextBox.TabIndex = 11;
+            this.ngaySinhDateTimePicker.Size = new System.Drawing.Size(136, 27);
+            this.ngaySinhDateTimePicker.TabIndex = 3;
             // 
             // diaChiLabel
             // 
             this.diaChiLabel.AutoSize = true;
-            this.diaChiLabel.Location = new System.Drawing.Point(12, 129);
+            this.diaChiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diaChiLabel.Location = new System.Drawing.Point(52, 165);
+            this.diaChiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.diaChiLabel.Name = "diaChiLabel";
-            this.diaChiLabel.Size = new System.Drawing.Size(51, 17);
-            this.diaChiLabel.TabIndex = 10;
+            this.diaChiLabel.Size = new System.Drawing.Size(61, 20);
+            this.diaChiLabel.TabIndex = 9;
             this.diaChiLabel.Text = "Địa chỉ";
             // 
-            // soDienThoaiTextBox
+            // diaChiTextBox
             // 
-            this.soDienThoaiTextBox.Location = new System.Drawing.Point(15, 205);
-            this.soDienThoaiTextBox.Name = "soDienThoaiTextBox";
-            this.soDienThoaiTextBox.Size = new System.Drawing.Size(193, 22);
-            this.soDienThoaiTextBox.TabIndex = 13;
+            this.diaChiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diaChiTextBox.Location = new System.Drawing.Point(58, 189);
+            this.diaChiTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.diaChiTextBox.Name = "diaChiTextBox";
+            this.diaChiTextBox.Size = new System.Drawing.Size(702, 27);
+            this.diaChiTextBox.TabIndex = 4;
             // 
             // soDienThoaiLabel
             // 
             this.soDienThoaiLabel.AutoSize = true;
-            this.soDienThoaiLabel.Location = new System.Drawing.Point(12, 185);
+            this.soDienThoaiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soDienThoaiLabel.Location = new System.Drawing.Point(54, 242);
+            this.soDienThoaiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.soDienThoaiLabel.Name = "soDienThoaiLabel";
-            this.soDienThoaiLabel.Size = new System.Drawing.Size(91, 17);
-            this.soDienThoaiLabel.TabIndex = 12;
+            this.soDienThoaiLabel.Size = new System.Drawing.Size(106, 20);
+            this.soDienThoaiLabel.TabIndex = 11;
             this.soDienThoaiLabel.Text = "Số điện thoại";
             // 
-            // thongTinHocSinhPanel
+            // soDienThoaiTextBox
             // 
-            this.thongTinHocSinhPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.thongTinHocSinhPanel.Controls.Add(this.ngaySinhLabel);
-            this.thongTinHocSinhPanel.Controls.Add(this.soDienThoaiTextBox);
-            this.thongTinHocSinhPanel.Controls.Add(this.soDienThoaiLabel);
-            this.thongTinHocSinhPanel.Controls.Add(this.ngaySinhDateTimePicker);
-            this.thongTinHocSinhPanel.Controls.Add(this.diaChiTextBox);
-            this.thongTinHocSinhPanel.Controls.Add(this.hoTenTextBox);
-            this.thongTinHocSinhPanel.Controls.Add(this.hoTenLabel);
-            this.thongTinHocSinhPanel.Controls.Add(this.gioiTinhComboBox);
-            this.thongTinHocSinhPanel.Controls.Add(this.maHocSinhTextBox);
-            this.thongTinHocSinhPanel.Controls.Add(this.gioiTinhLabel);
-            this.thongTinHocSinhPanel.Controls.Add(this.maHocSinhLabel);
-            this.thongTinHocSinhPanel.Controls.Add(this.diaChiLabel);
-            this.thongTinHocSinhPanel.Location = new System.Drawing.Point(12, 62);
-            this.thongTinHocSinhPanel.Name = "thongTinHocSinhPanel";
-            this.thongTinHocSinhPanel.Size = new System.Drawing.Size(826, 244);
-            this.thongTinHocSinhPanel.TabIndex = 14;
+            this.soDienThoaiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soDienThoaiTextBox.Location = new System.Drawing.Point(58, 266);
+            this.soDienThoaiTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.soDienThoaiTextBox.Name = "soDienThoaiTextBox";
+            this.soDienThoaiTextBox.Size = new System.Drawing.Size(279, 27);
+            this.soDienThoaiTextBox.TabIndex = 5;
             // 
-            // thongTinHocSinhLabel
+            // thongTinLopHocPanel
             // 
-            this.thongTinHocSinhLabel.AutoSize = true;
-            this.thongTinHocSinhLabel.Location = new System.Drawing.Point(12, 42);
-            this.thongTinHocSinhLabel.Name = "thongTinHocSinhLabel";
-            this.thongTinHocSinhLabel.Size = new System.Drawing.Size(125, 17);
-            this.thongTinHocSinhLabel.TabIndex = 15;
-            this.thongTinHocSinhLabel.Text = "Thông tin học sinh";
-            // 
-            // thongTinTiepNhanLabel
-            // 
-            this.thongTinTiepNhanLabel.AutoSize = true;
-            this.thongTinTiepNhanLabel.Location = new System.Drawing.Point(12, 326);
-            this.thongTinTiepNhanLabel.Name = "thongTinTiepNhanLabel";
-            this.thongTinTiepNhanLabel.Size = new System.Drawing.Size(188, 17);
-            this.thongTinTiepNhanLabel.TabIndex = 16;
-            this.thongTinTiepNhanLabel.Text = "Thông tin tiếp nhận học sinh";
-            // 
-            // thongTinTiepNhanPanel
-            // 
-            this.thongTinTiepNhanPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.thongTinTiepNhanPanel.Controls.Add(this.lopComboBox);
-            this.thongTinTiepNhanPanel.Controls.Add(this.hocKyComboBox);
-            this.thongTinTiepNhanPanel.Controls.Add(this.khoiComboBox);
-            this.thongTinTiepNhanPanel.Controls.Add(this.lopLabel);
-            this.thongTinTiepNhanPanel.Controls.Add(this.hockyLabel);
-            this.thongTinTiepNhanPanel.Controls.Add(this.khoiLabel);
-            this.thongTinTiepNhanPanel.Location = new System.Drawing.Point(12, 347);
-            this.thongTinTiepNhanPanel.Name = "thongTinTiepNhanPanel";
-            this.thongTinTiepNhanPanel.Size = new System.Drawing.Size(826, 133);
-            this.thongTinTiepNhanPanel.TabIndex = 17;
+            this.thongTinLopHocPanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.thongTinLopHocPanel.Controls.Add(this.lopComboBox);
+            this.thongTinLopHocPanel.Controls.Add(this.khoiComboBox);
+            this.thongTinLopHocPanel.Controls.Add(this.lopLabel);
+            this.thongTinLopHocPanel.Controls.Add(this.khoiLabel);
+            this.thongTinLopHocPanel.Location = new System.Drawing.Point(15, 467);
+            this.thongTinLopHocPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.thongTinLopHocPanel.Name = "thongTinLopHocPanel";
+            this.thongTinLopHocPanel.Size = new System.Drawing.Size(1234, 93);
+            this.thongTinLopHocPanel.TabIndex = 2;
             // 
             // lopComboBox
             // 
+            this.lopComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lopComboBox.FormattingEnabled = true;
-            this.lopComboBox.Location = new System.Drawing.Point(15, 96);
+            this.lopComboBox.Location = new System.Drawing.Point(441, 45);
+            this.lopComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.lopComboBox.Name = "lopComboBox";
-            this.lopComboBox.Size = new System.Drawing.Size(121, 24);
-            this.lopComboBox.TabIndex = 20;
-            // 
-            // hocKyComboBox
-            // 
-            this.hocKyComboBox.FormattingEnabled = true;
-            this.hocKyComboBox.Location = new System.Drawing.Point(365, 37);
-            this.hocKyComboBox.Name = "hocKyComboBox";
-            this.hocKyComboBox.Size = new System.Drawing.Size(121, 24);
-            this.hocKyComboBox.TabIndex = 19;
+            this.lopComboBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lopComboBox.Size = new System.Drawing.Size(150, 28);
+            this.lopComboBox.TabIndex = 7;
             // 
             // khoiComboBox
             // 
+            this.khoiComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.khoiComboBox.FormattingEnabled = true;
-            this.khoiComboBox.Location = new System.Drawing.Point(15, 37);
+            this.khoiComboBox.Location = new System.Drawing.Point(58, 45);
+            this.khoiComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.khoiComboBox.Name = "khoiComboBox";
-            this.khoiComboBox.Size = new System.Drawing.Size(121, 24);
-            this.khoiComboBox.TabIndex = 18;
+            this.khoiComboBox.Size = new System.Drawing.Size(150, 28);
+            this.khoiComboBox.TabIndex = 6;
+            this.khoiComboBox.SelectionChangeCommitted += new System.EventHandler(this.KhoiComboBox_SelectionChangeCommitted);
             // 
             // lopLabel
             // 
             this.lopLabel.AutoSize = true;
-            this.lopLabel.Location = new System.Drawing.Point(15, 75);
+            this.lopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lopLabel.Location = new System.Drawing.Point(436, 21);
+            this.lopLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lopLabel.Name = "lopLabel";
-            this.lopLabel.Size = new System.Drawing.Size(32, 17);
+            this.lopLabel.Size = new System.Drawing.Size(37, 20);
             this.lopLabel.TabIndex = 17;
             this.lopLabel.Text = "Lớp";
-            // 
-            // hockyLabel
-            // 
-            this.hockyLabel.AutoSize = true;
-            this.hockyLabel.Location = new System.Drawing.Point(362, 17);
-            this.hockyLabel.Name = "hockyLabel";
-            this.hockyLabel.Size = new System.Drawing.Size(51, 17);
-            this.hockyLabel.TabIndex = 16;
-            this.hockyLabel.Text = "Học kỳ";
             // 
             // khoiLabel
             // 
             this.khoiLabel.AutoSize = true;
-            this.khoiLabel.Location = new System.Drawing.Point(12, 17);
+            this.khoiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.khoiLabel.Location = new System.Drawing.Point(52, 21);
+            this.khoiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.khoiLabel.Name = "khoiLabel";
-            this.khoiLabel.Size = new System.Drawing.Size(36, 17);
-            this.khoiLabel.TabIndex = 14;
+            this.khoiLabel.Size = new System.Drawing.Size(42, 20);
+            this.khoiLabel.TabIndex = 15;
             this.khoiLabel.Text = "Khối";
+            // 
+            // thongTinHocSinhLabel
+            // 
+            this.thongTinHocSinhLabel.AutoSize = true;
+            this.thongTinHocSinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thongTinHocSinhLabel.Location = new System.Drawing.Point(13, 76);
+            this.thongTinHocSinhLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.thongTinHocSinhLabel.Name = "thongTinHocSinhLabel";
+            this.thongTinHocSinhLabel.Size = new System.Drawing.Size(172, 25);
+            this.thongTinHocSinhLabel.TabIndex = 2;
+            this.thongTinHocSinhLabel.Text = "Thông tin học sinh";
+            // 
+            // thongTinLopHocLabel
+            // 
+            this.thongTinLopHocLabel.AutoSize = true;
+            this.thongTinLopHocLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thongTinLopHocLabel.Location = new System.Drawing.Point(13, 438);
+            this.thongTinLopHocLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.thongTinLopHocLabel.Name = "thongTinLopHocLabel";
+            this.thongTinLopHocLabel.Size = new System.Drawing.Size(254, 25);
+            this.thongTinLopHocLabel.TabIndex = 3;
+            this.thongTinLopHocLabel.Text = "Thông tin lớp học (Optional)";
+            // 
+            // nhapLaiButton
+            // 
+            this.nhapLaiButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhapLaiButton.Location = new System.Drawing.Point(1028, 580);
+            this.nhapLaiButton.Margin = new System.Windows.Forms.Padding(4);
+            this.nhapLaiButton.Name = "nhapLaiButton";
+            this.nhapLaiButton.Size = new System.Drawing.Size(100, 50);
+            this.nhapLaiButton.TabIndex = 8;
+            this.nhapLaiButton.Text = "Nhập lại";
+            this.nhapLaiButton.UseVisualStyleBackColor = true;
+            this.nhapLaiButton.Click += new System.EventHandler(this.NhapLaiButton_Click);
             // 
             // luuButton
             // 
-            this.luuButton.Location = new System.Drawing.Point(734, 507);
+            this.luuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.luuButton.Location = new System.Drawing.Point(1149, 580);
+            this.luuButton.Margin = new System.Windows.Forms.Padding(4);
             this.luuButton.Name = "luuButton";
-            this.luuButton.Size = new System.Drawing.Size(104, 32);
-            this.luuButton.TabIndex = 18;
+            this.luuButton.Size = new System.Drawing.Size(100, 50);
+            this.luuButton.TabIndex = 9;
             this.luuButton.Text = "Lưu";
             this.luuButton.UseVisualStyleBackColor = true;
             this.luuButton.Click += new System.EventHandler(this.LuuButton_Click);
             // 
-            // nhapLaiButton
+            // formLabel
             // 
-            this.nhapLaiButton.Location = new System.Drawing.Point(606, 507);
-            this.nhapLaiButton.Name = "nhapLaiButton";
-            this.nhapLaiButton.Size = new System.Drawing.Size(104, 32);
-            this.nhapLaiButton.TabIndex = 19;
-            this.nhapLaiButton.Text = "Nhập lại";
-            this.nhapLaiButton.UseVisualStyleBackColor = true;
-            this.nhapLaiButton.Click += new System.EventHandler(this.nhapLaiButton_Click);
+            this.formLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.formLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formLabel.Location = new System.Drawing.Point(0, 0);
+            this.formLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.formLabel.Name = "formLabel";
+            this.formLabel.Size = new System.Drawing.Size(1262, 70);
+            this.formLabel.TabIndex = 6;
+            this.formLabel.Text = "TIẾP NHẬN HỌC SINH";
+            this.formLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TiepNhanHocSinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(850, 551);
-            this.Controls.Add(this.nhapLaiButton);
+            this.ClientSize = new System.Drawing.Size(1262, 643);
+            this.Controls.Add(this.formLabel);
             this.Controls.Add(this.luuButton);
-            this.Controls.Add(this.thongTinTiepNhanPanel);
-            this.Controls.Add(this.thongTinTiepNhanLabel);
+            this.Controls.Add(this.nhapLaiButton);
+            this.Controls.Add(this.thongTinLopHocLabel);
             this.Controls.Add(this.thongTinHocSinhLabel);
+            this.Controls.Add(this.thongTinLopHocPanel);
             this.Controls.Add(this.thongTinHocSinhPanel);
-            this.Controls.Add(this.menuStrip1);
-            this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TiepNhanHocSinh";
-            this.Text = "[Quản lý học sinh] Tiếp nhận học sinh";
+            this.Text = "Quản lý học sinh";
             this.Load += new System.EventHandler(this.TiepNhanHocSinh_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.thongTinHocSinhPanel.ResumeLayout(false);
             this.thongTinHocSinhPanel.PerformLayout();
-            this.thongTinTiepNhanPanel.ResumeLayout(false);
-            this.thongTinTiepNhanPanel.PerformLayout();
+            this.thongTinLopHocPanel.ResumeLayout(false);
+            this.thongTinLopHocPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem heThongToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quanLyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem traCuuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem baoCaoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem troGiupToolStripMenuItem;
-
-        /*
-         **************************************************
-         * Thông tin học sinh
-        */
-        private System.Windows.Forms.Label thongTinHocSinhLabel;
-        private System.Windows.Forms.Panel thongTinHocSinhPanel;
-
-        private System.Windows.Forms.Label maHocSinhLabel;
-        private System.Windows.Forms.TextBox maHocSinhTextBox;
-
-        private System.Windows.Forms.Label hoTenLabel;
-        private System.Windows.Forms.TextBox hoTenTextBox;
-
-        private System.Windows.Forms.Label gioiTinhLabel;
-        private System.Windows.Forms.ComboBox gioiTinhComboBox;
-
-        private System.Windows.Forms.Label ngaySinhLabel;
-        private System.Windows.Forms.DateTimePicker ngaySinhDateTimePicker;
-
-        private System.Windows.Forms.Label diaChiLabel;
-        private System.Windows.Forms.TextBox diaChiTextBox;
-
-        private System.Windows.Forms.Label soDienThoaiLabel;
-        private System.Windows.Forms.TextBox soDienThoaiTextBox;
-        /*
-         **************************************************
-         * Thông tin tiếp nhận
-        */
-        private System.Windows.Forms.Label thongTinTiepNhanLabel;
-        private System.Windows.Forms.Panel thongTinTiepNhanPanel;
-
-        private System.Windows.Forms.Label khoiLabel;
-        private System.Windows.Forms.ComboBox khoiComboBox;
-
-        private System.Windows.Forms.Label hockyLabel;
-        private System.Windows.Forms.ComboBox hocKyComboBox;
-
-        private System.Windows.Forms.Label lopLabel;
-        private System.Windows.Forms.ComboBox lopComboBox;
-
-        /*
-         **************************************************
-         * Buttons
-         */
-        private System.Windows.Forms.Button nhapLaiButton;
-        private System.Windows.Forms.Button luuButton;
-
-        private System.Windows.Forms.ToolStripMenuItem tiepNhanHocSinhToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lapDanhSachLopToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lopHocToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem diemSoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thayDoiQuyDinhToolStripMenuItem;
+        private Label thongTinHocSinhLabel;
+        private Panel thongTinHocSinhPanel;
+        private Label thongTinLopHocLabel;
+        private Panel thongTinLopHocPanel;
+        private TextBox maHocSinhTextBox;
+        private Label maHocSinhLabel;
+        private Label soDienThoaiLabel;
+        private TextBox soDienThoaiTextBox;
+        private Label diaChiLabel;
+        private TextBox diaChiTextBox;
+        private Label ngaySinhLabel;
+        private Label gioiTinhLabel;
+        private Label hoTenLabel;
+        private TextBox hoTenTextBox;
+        private DateTimePicker ngaySinhDateTimePicker;
+        private ComboBox gioiTinhComboBox;
+        private Label khoiLabel;
+        private Label lopLabel;
+        private Button nhapLaiButton;
+        private Button luuButton;
+        private Label formLabel;
+        private ComboBox khoiComboBox;
+        private ComboBox lopComboBox;
     }
 }
-

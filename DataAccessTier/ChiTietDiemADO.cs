@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyHocSinh
 {
-    class ChiTietDiemDAO: DatabaseConnection
+    class ChiTietDiemADO: DatabaseConnection
     {
     }
 }

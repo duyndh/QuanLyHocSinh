@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyHocSinh
 {
-    class MonHocDAO: DatabaseConnection
+    class MonHocADO: DatabaseConnection
     {
     }
 }

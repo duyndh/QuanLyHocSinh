@@ -8,11 +8,11 @@ namespace QuanLyHocSinh
     {
         private string MaKhoi { get; set; }
         private string TenKhoi { get; set; }
-        private int SoLop { get; set; }
+        private string SoLop { get; set; }
 
         public Khoi(string maKhoi = "",
                     string tenKhoi = "",
-                    int soLop = 0)
+                    string soLop = "")
         {
             MaKhoi = maKhoi;
             TenKhoi = tenKhoi;

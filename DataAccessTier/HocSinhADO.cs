@@ -8,15 +8,14 @@ using System.Data.SqlClient;
 
 namespace QuanLyHocSinh
 {
-    public class HocSinhDAO: DatabaseConnection
+    public class HocSinhADO: DatabaseConnection
     {
-        public HocSinhDAO() : base() { }
-        public void ThemHocSinhDAO(HocSinh hocSinh)
+        public void ThemHocSinhADO(HocSinh hocSinh)
         {   
             if (connection.State != ConnectionState.Open)
                 connection.Open();
 
-            SqlCommand command = new SqlCommand("ThemHS", connection);
+            SqlCommand command = new SqlCommand("ThemHocSinh", connection);
             command.CommandType = CommandType.StoredProcedure;
             
             //command.Parameters.Add(new SqlParameter("@MaHS", hocSinh.MaHS));
@@ -25,9 +24,13 @@ namespace QuanLyHocSinh
             command.Parameters.AddWithValue("@NgaySinh", hocSinh.NgaySinh);
             command.Parameters.AddWithValue("@DiaChi", hocSinh.DiaChi);
             command.Parameters.AddWithValue("@SoDT", hocSinh.SoDT);
-            //command.Parameters.Add(new SqlParameter("@MaLop", hocSinh.MaLop));
-
+            if (hocSinh.MaLop == "0")
+                command.Parameters.AddWithValue("@MaLop", DBNull.Value);
+            else
+                command.Parameters.AddWithValue("@MaLop", hocSinh.MaLop);
+            
             command.ExecuteNonQuery();
+            connection.Close();
         }
 
         public int LayMaHocSinhMoiDAO()
@@ -38,12 +41,12 @@ namespace QuanLyHocSinh
             SqlCommand command = new SqlCommand("LayMaHocSinhMoi", connection);
             command.CommandType = CommandType.StoredProcedure;
             
-            SqlParameter returnParameter = command.Parameters.Add("@ReturnValue", SqlDbType.Int);
-            returnParameter.Direction = ParameterDirection.ReturnValue;
+            SqlParameter outputParameter = command.Parameters.Add("@MaHS", SqlDbType.Int);
+            outputParameter.Direction = ParameterDirection.Output;
 
             command.ExecuteNonQuery();
-
-            return (int)returnParameter.Value + 1;
+            connection.Close();
+            return (int)outputParameter.Value + 1;
         }
     }
 }

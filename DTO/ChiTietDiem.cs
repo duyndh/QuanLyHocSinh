@@ -6,15 +6,15 @@ namespace QuanLyHocSinh
 {
     class ChiTietDiem
     {
-        private int MaCTD { get; set; }
-        private float Diem { get; set; }
+        private string MaCTD { get; set; }
+        private string Diem { get; set; }
         private string MaLKT { get; set; }
-        private int MaHP { get; set; }
+        private string MaHP { get; set; }
 
-        public ChiTietDiem( int maCTD = 0,
-                            float diem = 0,
+        public ChiTietDiem( string maCTD = "",
+                            string diem = "",
                             string maLKT = "",
-                            int maHP = 0)
+                            string maHP = "")
         {
             MaCTD = maCTD;
             Diem = diem;

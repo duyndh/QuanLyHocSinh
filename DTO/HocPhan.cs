@@ -6,15 +6,15 @@ namespace QuanLyHocSinh
 {
     class HocPhan
     {
-        private int MaHP { get; set; }
-        private float DiemTB { get; set; }
-        private int MaHS { get; set; }
+        private string MaHP { get; set; }
+        private string DiemTB { get; set; }
+        private string MaHS { get; set; }
         private string MaMH { get; set; }
         private string MaHK { get; set; }
 
-        public HocPhan( int maHP = 0,
-                        float diemTB = 0,
-                        int maHS = 0,
+        public HocPhan( string maHP = "",
+                        string diemTB = "",
+                        string maHS = "",
                         string maMH = "",
                         string maHK = "")
         {

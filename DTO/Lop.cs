@@ -8,12 +8,12 @@ namespace QuanLyHocSinh
     {
         private string MaLop { get; set; }
         private string TenLop { get; set; }
-        private int SiSo { get; set; }
+        private string SiSo { get; set; }
         private string MaKhoi { get; set; }
 
         public Lop( string maLop = "",
                     string tenLop = "",
-                    int siSo = 0,
+                    string siSo = "",
                     string maKhoi = "")
         {
             MaLop = maLop;

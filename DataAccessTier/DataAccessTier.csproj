@@ -40,15 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChiTietDiemDAO.cs" />
+    <Compile Include="ChiTietDiemADO.cs" />
     <Compile Include="DatabaseConnection.cs" />
-    <Compile Include="HocKyDAO.cs" />
-    <Compile Include="HocPhanDAO.cs" />
-    <Compile Include="HocSinhDAO.cs" />
-    <Compile Include="KhoiDAO.cs" />
-    <Compile Include="LoaiKiemTraDAO.cs" />
-    <Compile Include="LopDAO.cs" />
-    <Compile Include="MonHocDAO.cs" />
+    <Compile Include="HocKyADO.cs" />
+    <Compile Include="HocPhanADO.cs" />
+    <Compile Include="HocSinhADO.cs" />
+    <Compile Include="KhoiADO.cs" />
+    <Compile Include="LoaiKiemTraADO.cs" />
+    <Compile Include="LopADO.cs" />
+    <Compile Include="MonHocADO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
