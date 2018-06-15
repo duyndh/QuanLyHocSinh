@@ -4,10 +4,10 @@ using System.Text;
 
 namespace QuanLyHocSinh
 {
-    class MonHoc
+    public class MonHoc
     {
-        private string MaMH { get; set; }
-        private string TenMH { get; set; }
+        public string MaMH { get; set; }
+        public string TenMH { get; set; }
         
         public MonHoc(  string maMH = "",
                         string tenMH = "")

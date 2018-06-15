@@ -4,12 +4,12 @@ using System.Text;
 
 namespace QuanLyHocSinh
 {
-    class Lop
+    public class Lop
     {
-        private string MaLop { get; set; }
-        private string TenLop { get; set; }
-        private string SiSo { get; set; }
-        private string MaKhoi { get; set; }
+        public string MaLop { get; set; }
+        public string TenLop { get; set; }
+        public string SiSo { get; set; }
+        public string MaKhoi { get; set; }
 
         public Lop( string maLop = "",
                     string tenLop = "",

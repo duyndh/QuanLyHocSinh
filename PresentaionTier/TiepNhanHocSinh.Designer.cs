@@ -81,58 +81,58 @@ namespace QuanLyHocSinh
             // maHocSinhLabel
             // 
             this.maHocSinhLabel.AutoSize = true;
-            this.maHocSinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maHocSinhLabel.Location = new System.Drawing.Point(52, 22);
+            this.maHocSinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maHocSinhLabel.Location = new System.Drawing.Point(53, 17);
             this.maHocSinhLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maHocSinhLabel.Name = "maHocSinhLabel";
-            this.maHocSinhLabel.Size = new System.Drawing.Size(100, 20);
+            this.maHocSinhLabel.Size = new System.Drawing.Size(118, 25);
             this.maHocSinhLabel.TabIndex = 1;
             this.maHocSinhLabel.Text = "Mã học sinh";
             // 
             // maHocSinhTextBox
             // 
             this.maHocSinhTextBox.Enabled = false;
-            this.maHocSinhTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maHocSinhTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maHocSinhTextBox.Location = new System.Drawing.Point(58, 46);
             this.maHocSinhTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.maHocSinhTextBox.Name = "maHocSinhTextBox";
-            this.maHocSinhTextBox.Size = new System.Drawing.Size(124, 27);
+            this.maHocSinhTextBox.Size = new System.Drawing.Size(124, 30);
             this.maHocSinhTextBox.TabIndex = 0;
             // 
             // hoTenLabel
             // 
             this.hoTenLabel.AutoSize = true;
-            this.hoTenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hoTenLabel.Location = new System.Drawing.Point(54, 92);
+            this.hoTenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoTenLabel.Location = new System.Drawing.Point(55, 87);
             this.hoTenLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hoTenLabel.Name = "hoTenLabel";
-            this.hoTenLabel.Size = new System.Drawing.Size(59, 20);
+            this.hoTenLabel.Size = new System.Drawing.Size(69, 25);
             this.hoTenLabel.TabIndex = 3;
             this.hoTenLabel.Text = "Họ tên";
             // 
             // hoTenTextBox
             // 
-            this.hoTenTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoTenTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hoTenTextBox.Location = new System.Drawing.Point(58, 116);
             this.hoTenTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.hoTenTextBox.Name = "hoTenTextBox";
-            this.hoTenTextBox.Size = new System.Drawing.Size(533, 27);
+            this.hoTenTextBox.Size = new System.Drawing.Size(533, 30);
             this.hoTenTextBox.TabIndex = 1;
             // 
             // gioiTinhLabel
             // 
             this.gioiTinhLabel.AutoSize = true;
-            this.gioiTinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gioiTinhLabel.Location = new System.Drawing.Point(753, 92);
+            this.gioiTinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gioiTinhLabel.Location = new System.Drawing.Point(754, 87);
             this.gioiTinhLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gioiTinhLabel.Name = "gioiTinhLabel";
-            this.gioiTinhLabel.Size = new System.Drawing.Size(71, 20);
+            this.gioiTinhLabel.Size = new System.Drawing.Size(82, 25);
             this.gioiTinhLabel.TabIndex = 5;
             this.gioiTinhLabel.Text = "Giới tính";
             // 
             // gioiTinhComboBox
             // 
-            this.gioiTinhComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gioiTinhComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gioiTinhComboBox.FormattingEnabled = true;
             this.gioiTinhComboBox.Items.AddRange(new object[] {
             "Nam",
@@ -140,69 +140,69 @@ namespace QuanLyHocSinh
             this.gioiTinhComboBox.Location = new System.Drawing.Point(757, 115);
             this.gioiTinhComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.gioiTinhComboBox.Name = "gioiTinhComboBox";
-            this.gioiTinhComboBox.Size = new System.Drawing.Size(150, 28);
+            this.gioiTinhComboBox.Size = new System.Drawing.Size(150, 33);
             this.gioiTinhComboBox.TabIndex = 2;
             // 
             // ngaySinhLabel
             // 
             this.ngaySinhLabel.AutoSize = true;
-            this.ngaySinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ngaySinhLabel.Location = new System.Drawing.Point(1009, 92);
+            this.ngaySinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ngaySinhLabel.Location = new System.Drawing.Point(1010, 87);
             this.ngaySinhLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ngaySinhLabel.Name = "ngaySinhLabel";
-            this.ngaySinhLabel.Size = new System.Drawing.Size(83, 20);
+            this.ngaySinhLabel.Size = new System.Drawing.Size(99, 25);
             this.ngaySinhLabel.TabIndex = 7;
             this.ngaySinhLabel.Text = "Ngày sinh";
             // 
             // ngaySinhDateTimePicker
             // 
             this.ngaySinhDateTimePicker.CustomFormat = "dd/MM/yyyy";
-            this.ngaySinhDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ngaySinhDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ngaySinhDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ngaySinhDateTimePicker.Location = new System.Drawing.Point(1013, 116);
             this.ngaySinhDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.ngaySinhDateTimePicker.Name = "ngaySinhDateTimePicker";
-            this.ngaySinhDateTimePicker.Size = new System.Drawing.Size(136, 27);
+            this.ngaySinhDateTimePicker.Size = new System.Drawing.Size(136, 30);
             this.ngaySinhDateTimePicker.TabIndex = 3;
             // 
             // diaChiLabel
             // 
             this.diaChiLabel.AutoSize = true;
-            this.diaChiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diaChiLabel.Location = new System.Drawing.Point(52, 165);
+            this.diaChiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diaChiLabel.Location = new System.Drawing.Point(53, 160);
             this.diaChiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.diaChiLabel.Name = "diaChiLabel";
-            this.diaChiLabel.Size = new System.Drawing.Size(61, 20);
+            this.diaChiLabel.Size = new System.Drawing.Size(71, 25);
             this.diaChiLabel.TabIndex = 9;
             this.diaChiLabel.Text = "Địa chỉ";
             // 
             // diaChiTextBox
             // 
-            this.diaChiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diaChiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.diaChiTextBox.Location = new System.Drawing.Point(58, 189);
             this.diaChiTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.diaChiTextBox.Name = "diaChiTextBox";
-            this.diaChiTextBox.Size = new System.Drawing.Size(702, 27);
+            this.diaChiTextBox.Size = new System.Drawing.Size(702, 30);
             this.diaChiTextBox.TabIndex = 4;
             // 
             // soDienThoaiLabel
             // 
             this.soDienThoaiLabel.AutoSize = true;
-            this.soDienThoaiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soDienThoaiLabel.Location = new System.Drawing.Point(54, 242);
+            this.soDienThoaiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soDienThoaiLabel.Location = new System.Drawing.Point(55, 237);
             this.soDienThoaiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.soDienThoaiLabel.Name = "soDienThoaiLabel";
-            this.soDienThoaiLabel.Size = new System.Drawing.Size(106, 20);
+            this.soDienThoaiLabel.Size = new System.Drawing.Size(126, 25);
             this.soDienThoaiLabel.TabIndex = 11;
             this.soDienThoaiLabel.Text = "Số điện thoại";
             // 
             // soDienThoaiTextBox
             // 
-            this.soDienThoaiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soDienThoaiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.soDienThoaiTextBox.Location = new System.Drawing.Point(58, 266);
             this.soDienThoaiTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.soDienThoaiTextBox.Name = "soDienThoaiTextBox";
-            this.soDienThoaiTextBox.Size = new System.Drawing.Size(279, 27);
+            this.soDienThoaiTextBox.Size = new System.Drawing.Size(279, 30);
             this.soDienThoaiTextBox.TabIndex = 5;
             // 
             // thongTinLopHocPanel
@@ -220,77 +220,77 @@ namespace QuanLyHocSinh
             // 
             // lopComboBox
             // 
-            this.lopComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lopComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lopComboBox.FormattingEnabled = true;
             this.lopComboBox.Location = new System.Drawing.Point(441, 45);
             this.lopComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.lopComboBox.Name = "lopComboBox";
             this.lopComboBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lopComboBox.Size = new System.Drawing.Size(150, 28);
+            this.lopComboBox.Size = new System.Drawing.Size(150, 33);
             this.lopComboBox.TabIndex = 7;
             // 
             // khoiComboBox
             // 
-            this.khoiComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.khoiComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.khoiComboBox.FormattingEnabled = true;
             this.khoiComboBox.Location = new System.Drawing.Point(58, 45);
             this.khoiComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.khoiComboBox.Name = "khoiComboBox";
-            this.khoiComboBox.Size = new System.Drawing.Size(150, 28);
+            this.khoiComboBox.Size = new System.Drawing.Size(150, 33);
             this.khoiComboBox.TabIndex = 6;
             this.khoiComboBox.SelectionChangeCommitted += new System.EventHandler(this.KhoiComboBox_SelectionChangeCommitted);
             // 
             // lopLabel
             // 
             this.lopLabel.AutoSize = true;
-            this.lopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lopLabel.Location = new System.Drawing.Point(436, 21);
+            this.lopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lopLabel.Location = new System.Drawing.Point(439, 16);
             this.lopLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lopLabel.Name = "lopLabel";
-            this.lopLabel.Size = new System.Drawing.Size(37, 20);
+            this.lopLabel.Size = new System.Drawing.Size(45, 25);
             this.lopLabel.TabIndex = 17;
             this.lopLabel.Text = "Lớp";
             // 
             // khoiLabel
             // 
             this.khoiLabel.AutoSize = true;
-            this.khoiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.khoiLabel.Location = new System.Drawing.Point(52, 21);
+            this.khoiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.khoiLabel.Location = new System.Drawing.Point(55, 16);
             this.khoiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.khoiLabel.Name = "khoiLabel";
-            this.khoiLabel.Size = new System.Drawing.Size(42, 20);
+            this.khoiLabel.Size = new System.Drawing.Size(52, 25);
             this.khoiLabel.TabIndex = 15;
             this.khoiLabel.Text = "Khối";
             // 
             // thongTinHocSinhLabel
             // 
             this.thongTinHocSinhLabel.AutoSize = true;
-            this.thongTinHocSinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thongTinHocSinhLabel.Location = new System.Drawing.Point(13, 76);
+            this.thongTinHocSinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thongTinHocSinhLabel.Location = new System.Drawing.Point(10, 70);
             this.thongTinHocSinhLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.thongTinHocSinhLabel.Name = "thongTinHocSinhLabel";
-            this.thongTinHocSinhLabel.Size = new System.Drawing.Size(172, 25);
+            this.thongTinHocSinhLabel.Size = new System.Drawing.Size(209, 29);
             this.thongTinHocSinhLabel.TabIndex = 2;
             this.thongTinHocSinhLabel.Text = "Thông tin học sinh";
             // 
             // thongTinLopHocLabel
             // 
             this.thongTinLopHocLabel.AutoSize = true;
-            this.thongTinLopHocLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thongTinLopHocLabel.Location = new System.Drawing.Point(13, 438);
+            this.thongTinLopHocLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thongTinLopHocLabel.Location = new System.Drawing.Point(10, 432);
             this.thongTinLopHocLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.thongTinLopHocLabel.Name = "thongTinLopHocLabel";
-            this.thongTinLopHocLabel.Size = new System.Drawing.Size(254, 25);
+            this.thongTinLopHocLabel.Size = new System.Drawing.Size(312, 29);
             this.thongTinLopHocLabel.TabIndex = 3;
             this.thongTinLopHocLabel.Text = "Thông tin lớp học (Optional)";
             // 
             // nhapLaiButton
             // 
-            this.nhapLaiButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nhapLaiButton.Location = new System.Drawing.Point(1028, 580);
+            this.nhapLaiButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhapLaiButton.Location = new System.Drawing.Point(900, 570);
             this.nhapLaiButton.Margin = new System.Windows.Forms.Padding(4);
             this.nhapLaiButton.Name = "nhapLaiButton";
-            this.nhapLaiButton.Size = new System.Drawing.Size(100, 50);
+            this.nhapLaiButton.Size = new System.Drawing.Size(150, 60);
             this.nhapLaiButton.TabIndex = 8;
             this.nhapLaiButton.Text = "Nhập lại";
             this.nhapLaiButton.UseVisualStyleBackColor = true;
@@ -298,11 +298,11 @@ namespace QuanLyHocSinh
             // 
             // luuButton
             // 
-            this.luuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.luuButton.Location = new System.Drawing.Point(1149, 580);
+            this.luuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.luuButton.Location = new System.Drawing.Point(1099, 570);
             this.luuButton.Margin = new System.Windows.Forms.Padding(4);
             this.luuButton.Name = "luuButton";
-            this.luuButton.Size = new System.Drawing.Size(100, 50);
+            this.luuButton.Size = new System.Drawing.Size(150, 60);
             this.luuButton.TabIndex = 9;
             this.luuButton.Text = "Lưu";
             this.luuButton.UseVisualStyleBackColor = true;

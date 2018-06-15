@@ -4,7 +4,7 @@ using System.Text;
 
 namespace QuanLyHocSinh
 {
-    class HocKy
+    public class HocKy
     {
         private string MaHK { get; set; }
         private string TenHK { get; set; }

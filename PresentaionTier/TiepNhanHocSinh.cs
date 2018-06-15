@@ -27,15 +27,16 @@ namespace QuanLyHocSinh
 
         private void TiepNhanHocSinh_Load(object sender, EventArgs e)
         {
-            // Khoi
+            // Khối
             khoiTable = khoiObject.LayDuLieuKhoiBUS();
             khoiComboBox.DataSource = khoiTable;
             khoiComboBox.ValueMember = "MaKhoi";
             khoiComboBox.DisplayMember = "TenKhoi";
 
-            // Lop
+            // Lớp
             KhoiComboBox_SelectionChangeCommitted(sender, e);
 
+            // Thông tin học sinh
             maHocSinhTextBox.Text = hocSinhObject.LayMaHocSinhMoiBUS().ToString();
             hoTenTextBox.ResetText();
             gioiTinhComboBox.Text = "Nam";
@@ -66,15 +67,13 @@ namespace QuanLyHocSinh
         {
             try
             {
-                
                 HocSinh hocSinh = new HocSinh(  maHocSinhTextBox.Text,
                                                 hoTenTextBox.Text,
                                                 gioiTinhComboBox.Text,
                                                 ngaySinhDateTimePicker.Text,
                                                 diaChiTextBox.Text,
                                                 soDienThoaiTextBox.Text,
-                                                lopComboBox.Text == "" ? "0" : lopComboBox.SelectedValue.ToString());
-
+                                                lopComboBox.Text == "" ? "" : (lopComboBox.SelectedValue.ToString()));
                 hocSinhObject.ThemHocSinhBUS(hocSinh);
                 MessageBox.Show("Thêm học sinh thành công");
 

@@ -48,6 +48,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BangDiemMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BangDiemMonHoc.Designer.cs">
+      <DependentUpon>BangDiemMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoTongKetHocKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoTongKetHocKy.Designer.cs">
+      <DependentUpon>BaoCaoTongKetHocKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoTongKetMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoTongKetMon.Designer.cs">
+      <DependentUpon>BaoCaoTongKetMon.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,12 +74,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThayDoiQuyDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThayDoiQuyDinh.Designer.cs">
+      <DependentUpon>ThayDoiQuyDinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="TiepNhanHocSinh.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TiepNhanHocSinh.Designer.cs">
       <DependentUpon>TiepNhanHocSinh.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BangDiemMonHoc.resx">
+      <DependentUpon>BangDiemMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoTongKetHocKy.resx">
+      <DependentUpon>BaoCaoTongKetHocKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoTongKetMon.resx">
+      <DependentUpon>BaoCaoTongKetMon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +107,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ThayDoiQuyDinh.resx">
+      <DependentUpon>ThayDoiQuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TiepNhanHocSinh.resx">
       <DependentUpon>TiepNhanHocSinh.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,6 +28,11 @@
         private System.Windows.Forms.ToolStripMenuItem troGiupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiepNhanHocSinhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lapDanhSachLopToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nhapDiemMonHocToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bangDiemMonHocToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem baoCaoTongKetMonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem baoCaoTongKetHocKyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thayDoiQuyDinhToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem taiKhoanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thoatToolStripMenuItem;
     }
 }
